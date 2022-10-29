@@ -52,3 +52,13 @@ body {
     color: white;
     border: 0;
 }
+
+/*Box erro do painel*/
+.erro-box {
+    width: 100%;
+    padding: 8px 2%;
+    text-align: center;
+    background-color: #f75353;
+    color: white;
+    font-size: 15px;
+}
