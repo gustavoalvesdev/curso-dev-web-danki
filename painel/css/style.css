@@ -69,13 +69,7 @@ body {
 .clear {clear:both;}
 
 .center {padding: 0 2%;margin: 0 auto;}
-.menu {
-    overflow-y: auto;
-    height: 100%;
-    background: #455a64;
-    float: left;
-    width: 300px;
-}
+
 header {
     float: left;
     padding: 10px 0;
@@ -88,6 +82,60 @@ header {
 }
 
 .loggout a {
+    text-decoration: none;
     color: white;
     font-size: 20px;
+}
+
+.loggout a > span {
+    font-size: 17px;
+}
+
+.menu-btn {
+    float: left;
+    cursor: pointer;
+    font-size: 23px;
+    color: white;
+}
+
+.menu {
+    overflow-y: auto;
+    height: 100%;
+    padding: 10px;
+    background: #455a64;
+    float: left;
+    width: 300px;
+}
+
+.box-usuario {
+    text-align: center;
+}
+
+.avatar-usuario {
+    text-align: left;
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid #2F3D42;
+}
+
+.avatar-usuario i {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #2F3D42;
+}
+
+.nome-usuario {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.nome-usuario p {
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
 }
