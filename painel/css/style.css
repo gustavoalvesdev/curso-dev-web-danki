@@ -11,6 +11,10 @@ body {
     background: rgb(225, 225, 225);
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* Página de Login */
 .box-login {
     box-shadow: 10px 10px 5px rgb(200, 200, 200);
@@ -193,5 +197,11 @@ header {
     header {
         left: 0;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .menu-wrapper {
+        width: 200px;
     }
 }
