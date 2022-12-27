@@ -29,3 +29,5 @@ function pegaCargo($cargo) {
 
 	return $arr[$cargo];
 }
+
+$nomeEmpresa = 'Danki Code';

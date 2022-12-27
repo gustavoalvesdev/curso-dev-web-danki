@@ -20,7 +20,7 @@
 </head>
 <body>
     <div class="menu">
-        <div class="menu-wrapper">
+        <div class="menu-wraper">
             <div class="box-usuario">
                 <?php 
                     if ($_SESSION['img'] == '') {
@@ -43,8 +43,24 @@
                 <!-- nome-usuario -->
             </div>
             <!-- box-usuario -->
+            <div class="items-menu">
+                <h2>Cadastro</h2>
+                <a href="">Cadastrar Depoimento</a>
+                <a href="">Cadastrar Serviço</a>
+                <a href="">Cadastrar Slides</a>
+                <h2>Gestão</h2>
+                <a href="">Listar Depoimento</a>
+                <a href="">Listar Serviços</a>
+                <a href="">Listar Slides</a>
+                <h2>Administração do Painel</h2>
+                <a href="">Editar Usuário</a>
+                <a href="">Adicionar Usuários</a>
+                <h2>Configuração Geral</h2>
+                <a href="">Editar</a>
+            </div>
+            <!-- items-menu -->
         </div>
-        <!-- menu-wrapper -->
+        <!-- menu-wraper -->
     </div>    
     <!-- menu -->
 
@@ -68,7 +84,35 @@
 
     <div class="content">
         <div class="box-content left w100">
+            <h2><i class="fa fa-home"></i> Painel de Controle - <?php echo $nomeEmpresa; ?></h2>
 
+            <div class="box-metricas">
+                <div class="box-metrica-single">
+                    <div class="box-metrica-wraper">
+                        <h2>Usuários Online</h2>
+                        <p>10</p>
+                    </div>
+                    <!-- box-metrica-wraper -->
+                </div>
+                <!-- box-metrica-single -->
+                <div class="box-metrica-single">
+                    <div class="box-metrica-wraper">
+                        <h2>Total de Visitas</h2>
+                        <p>100</p>
+                    </div>
+                    <!-- box-metrica-wraper -->
+                </div>
+                <!-- box-metrica-single -->
+                <div class="box-metrica-single">
+                    <div class="box-metrica-wraper">
+                        <h2>Visitas Hoje</h2>
+                        <p>3</p>
+                    </div>
+                    <!-- box-metrica-wraper -->
+                </div>
+                <!-- box-metrica-single -->
+            </div>
+            <!-- box-metricas -->
         </div>
         <!-- box-content -->
 
