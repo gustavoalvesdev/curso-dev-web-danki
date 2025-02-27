@@ -16,12 +16,12 @@
             if (class_exists('MySql')) {
             if (isset($_POST['acao'])) {
                 
-                $user = $_POST['user'];
-                $password = $_POST['password'];
+                $user = addslashes($_POST['user']);
+                $password = addslashes($_POST['password']);
 
                 
                     $sql = MySql::conectar()->prepare("SELECT * FROM `tb_admin.usuarios` WHERE user = ? AND password = ?");
-                    $sql->execute(array($user, $password));
+                    $sql->execute(array($user, md5($password)));
 
                     if ($sql->rowCount() == 1) {
                         $info = $sql->fetch();
