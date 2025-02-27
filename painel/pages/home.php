@@ -1,3 +1,6 @@
+<?php 
+    $usuariosOnline = Painel::listarUsuariosOnline();
+?>
 <div class="box-content left w100">
     <h2><i class="fa fa-home"></i> Painel de Controle - <?php echo NOME_EMPRESA; ?></h2>
 
@@ -5,7 +8,7 @@
         <div class="box-metrica-single">
             <div class="box-metrica-wraper">
                 <h2>Usuários Online</h2>
-                <p>10</p>
+                <p><?php echo count($usuariosOnline); ?></p>
             </div>
             <!-- box-metrica-wraper -->
         </div>
@@ -51,19 +54,19 @@
         </div>
         <!-- row -->
          <?php 
-            for($i = 0; $i < 1; $i++) {
+            foreach($usuariosOnline as $key => $value) {
          ?>
         <div class="row">
             <div class="col">
-                <span>192.168.1.22</span>
+                <span><?php echo $value['ip']; ?></span>
             </div>
             <!-- col -->
             <div class="col">
-                <span>26/02/2025  23:24:32</span>
+                <span><?php echo date('d/m/Y H:i:s' ,strtotime($value['ultima_acao'])); ?></span>
             </div>
             <!-- col -->
             <div class="clear"></div>
-            <!-- clear 
+            <!-- clear -->
         </div>
         <!-- row -->
         <?php } ?>
