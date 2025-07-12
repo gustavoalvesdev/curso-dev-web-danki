@@ -1,11 +1,15 @@
 <?php 
 
-class MinhaClasse {
-    const VALOR = 300;
+class MinhaClasse 
+{
+    private int $idade = 32;
+    public const NOME = 'Gustavo';
 
-    public function __construct() {
-        echo self::VALOR;
+    function __construct()
+    {
+
     }
 }
 
-echo MinhaClasse::VALOR;
+
+$classe = new MinhaClasse();
