@@ -1,11 +1,11 @@
 # Curso Desenvolvimento Web Completo Danki Code
 
-- [ ] Lock tables
-- [ ] Pesquisa avançada com LIKE
-- [ ] Entendendo IN e BETWEEN
-- [ ] Having clause
-- [ ] Subquery na prática
-- [ ] Create tables, show tables e mais queries avançadas
+- [x] Lock tables
+- [x] Pesquisa avançada com LIKE
+- [x] Entendendo IN e BETWEEN
+- [x] Having clause
+- [x] Subquery na prática
+- [x] Create tables, show tables e mais queries avançadas
 
 ## Criando Site Dinãmico - HTML5 e Marcação
 
