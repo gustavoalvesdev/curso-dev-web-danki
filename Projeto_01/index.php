@@ -6,13 +6,18 @@
     <title>Projeto 01</title>
     <meta name="description" content="Descrição do meu website">
     <meta name="keywords" content="Palavras,chave,do,meu,site">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
     <header>
         <div class="center">
-            <div class="logo">Logomarca</div>
+            <div class="logo left">Logomarca</div>
             <!-- logo -->
-             <nav class="desktop">
+             <nav class="desktop right">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Sobre</a></li>
@@ -21,7 +26,7 @@
                 </ul>
              </nav>
              <!-- desktop -->
-             <nav class="mobile">
+             <nav class="mobile right">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Sobre</a></li>
@@ -29,7 +34,9 @@
                     <li><a href="#">Contato</a></li>
                 </ul>
              </nav>
-             <!-- mobile -->
+            <!-- mobile -->
+            <div class="clear"></div>
+            <!-- clear -->
         </div>
         <!-- center -->
     </header>
@@ -48,7 +55,7 @@
      
     <section class="descricao-autor">
         <div class="center">
-            <div class="w50">
+            <div class="w50 left">
                 <h2>Guilherme C. Grillo</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi id officiis quod consectetur vitae dignissimos illum at, nemo laborum eligendi architecto voluptas numquam odio voluptate asperiores, ullam impedit quae. Neque? nemo laborum eligendi architecto voluptas numquam odio voluptate asperiores, ullam impedit quae. Neque?
@@ -58,10 +65,12 @@
                 </p>
             </div>
             <!-- w50 -->
-            <div class="w50">
+            <div class="w50 left">
                 <img src="images/foto.jpg">
             </div>
             <!-- w50 -->
+            <div class="clear"></div>
+            <!-- clear -->
         </div>
         <!-- center -->
     </section>
@@ -71,37 +80,39 @@
         <div class="center">
             <h2 class="title">Especialidades</h2>
             <!-- title -->
-            <div class="box-especialidade">
-                <h3>icone1</h3>
+            <div class="w33 left box-especialidade">
+                <h3><i class="fab fa-css3-alt"></i></h3>
                 <h3>CSS3</h3>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis est, ipsum nulla sed, optio amet labore libero explicabo ex, doloribus obcaecati quia repellat enim! Tempore delectus explicabo repellendus error similique!
                 </p>
             </div>
             <!-- box-especialidade -->
-            <div class="box-especialidade">
-                <h3>icone2</h3>
+            <div class="w33 left box-especialidade">
+                <h3><i class="fab fa-html5"></i></h3>
                 <h3>HTML5</h3>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis est, ipsum nulla sed, optio amet labore libero explicabo ex, doloribus obcaecati quia repellat enim! Tempore delectus explicabo repellendus error similique!
                 </p>
             </div>
             <!-- box-especialidade -->
-            <div class="box-especialidade">
-                <h3>icone3</h3>
+            <div class="w33 left box-especialidade">
+                <h3><i class="fab fa-js"></i></h3>
                 <h3>JavaScript</h3>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis est, ipsum nulla sed, optio amet labore libero explicabo ex, doloribus obcaecati quia repellat enim! Tempore delectus explicabo repellendus error similique!
                 </p>
             </div>
             <!-- box-especialidade -->
+            <div class="clear"></div>
+            <!-- clear -->
         </div>
         <!-- center -->
     </section>
     <!-- especialidades -->
     <section class="extras">
         <div class="center">
-            <div class="w50">
+            <div class="w50 left">
                 <h2 class="title">Depoimentos</h2>
                 <!-- title -->
                 <div class="depoimento-single">
@@ -127,7 +138,7 @@
                 <!-- depoimento-single -->
             </div>
             <!-- w50 -->
-            <div class="w50">
+            <div class="w50 left">
                 <h2 class="title">Serviços</h2>
                 <!-- title -->
                 <div class="servicos">
@@ -140,6 +151,8 @@
                 <!-- servicos -->
             </div>
             <!-- w50 -->
+            <div class="clear"></div>
+            <!-- clear -->
         </div>
         <!-- center -->
     </section>
