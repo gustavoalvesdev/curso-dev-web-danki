@@ -27,6 +27,11 @@
              </nav>
              <!-- desktop -->
              <nav class="mobile right">
+                <div class="botao-menu-mobile">
+                    <i class="fas fa-bars"></i>
+                    <!-- fa-bars -->
+                </div>
+                <!-- botao-menu-mobile -->
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Sobre</a></li>
@@ -68,7 +73,8 @@
             </div>
             <!-- w50 -->
             <div class="w50 left">
-                <img src="images/foto.jpg">
+                <img class="right" src="images/foto.jpg">
+                <!-- right -->
             </div>
             <!-- w50 -->
             <div class="clear"></div>
